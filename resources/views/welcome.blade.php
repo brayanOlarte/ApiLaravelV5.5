@@ -67,12 +67,7 @@
            border: 1px solid #000;
            margin: 10px 5px 0 0;
          }
-         body{height:100%;
-              width:100%;
-              background-image:url(12.jpg);
-              background-repeat:no-repeat;
-              background-size:cover;
-            }
+      
         </style>
     </head>
     <body background="img/12.jpg">
