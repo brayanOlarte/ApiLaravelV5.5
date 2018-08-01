@@ -7,8 +7,7 @@
 
         <title>Formulario</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
 
         <!-- Styles -->
         <style>
@@ -67,38 +66,45 @@
            border: 1px solid #000;
            margin: 10px 5px 0 0;
          }
-      
+
         </style>
     </head>
-    <body background="img/12.jpg">
+    <body>
         <div class="flex-center position-ref full-height">
 
 
             <div class="content">
                 <div class="title m-b-md">
-                    Formulario
+                    Registro de Usuarios
                 </div>
 
                     <input type="file" id="files" name="files[]" />
-                    <br />
-                    <output id="list"></output>
+                    <br>
+                    <output id="list"></output><br><br>
 
-                <div class="links">
-                    Nombre:<br>
-                    <input type="text" name="firstname"><br>
-                    Apellido:<br>
-                    <input type="text" name="lastname"><br>
-                    Usuario:<br>
-                    <input type="text" name="firstname"><br>
-                    Contraseña:<br>
-                    <input type="password" name="lastname"><br>
-                    Email:<br>
-                    <input type="email" name="email"><br>
-                    <input type="submit" value="Enviar">
-                    <input type="submit" value="Eliminar">
-                    <input type="submit" value="Buscar">
-                    <input type="submit" value="Modificar">
-                </div>
+                    <div id="content">
+
+                      		<form action="/reg.php" method="POST">
+
+                            
+
+                      		            <strong>Nombre:</strong><br>
+                      		            <input type="text" name="nombreuser" placeholder="Nombres" required><br><br>
+
+                      		            <strong>Correo electronico:</strong><br>
+                      		            <input type="text" name="emailuser" placeholder="example@mail.com" required><br><br>
+
+                      		            <strong>Contraseña:</strong><br>
+                      		            <input type="password" name="pass" placeholder="********" required><br><br>
+
+                      		            <strong>Repetir Contraseña:</strong><br>
+                      		            <input type="password" name="rpass" placeholder="********" required><br><br>
+
+                      		            <input type="submit" value="Registrarme" >
+                      		            <input type="reset" value="Reestablecer">
+
+                      		</form>
+    	                       </div>
             </div>
 
         <script>
